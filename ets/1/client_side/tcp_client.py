@@ -80,7 +80,7 @@ def getdatapemain_multithread(total_request, table_data):
 
     # setelah menyelesaikan tugasnya, dikembalikan ke main thread dengan join
     for k in range(total_request):
-        if (texec[k]):
+        if (texec[k] != -1):
             total_response += 1
         texec[k].join()
 
