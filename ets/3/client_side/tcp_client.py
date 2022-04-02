@@ -115,7 +115,7 @@ def getdatapemain_multithread(total_request, table_data):
     table_data.append([total_request, total_request, total_response, selesai])
 
 if __name__ == '__main__':
-    h = lihatversi()
+    h = lihatversi(is_secure=True)
     if (h):
         print(h)
     total_request = [1, 5, 10, 20]

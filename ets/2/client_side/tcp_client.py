@@ -62,7 +62,7 @@ def getdatapemain(nomor=0):
         print("kegagalan pada data transfer")
     return hasil
 
-def lihatversi(is_secure=False):
+def lihatversi():
     cmd=f"versi \r\n\r\n"
     hasil = send_command(cmd)
     return hasil
